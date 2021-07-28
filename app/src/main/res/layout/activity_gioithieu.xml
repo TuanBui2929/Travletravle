@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GioithieuActivity">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbargioithieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="56dp"
+            android:theme="?attr/actionBarTheme" />
+
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:foregroundGravity="fill_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.002"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp">
+
+
+                <ImageView
+                    android:id="@+id/gioithieu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="219dp"
+                    android:layout_marginBottom="10dp"
+                    android:foregroundGravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gioithieu1">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txtnoidung3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Đà Lạt là thành phố du lịch, nghỉ dưỡng khá nổi tiếng ở Việt Nam và trên thế giới với nhiều tên gọi thân thương như : thành phố ngàn hoa, thành phố ngàn thông, thành phố sương mù, thành phố của tình yêu và nổi nhớ hay Paris thu nhỏ,… Đây là thành phố hơn 120 năm tuổi được người Pháp xây dựng để làm nơi nghỉ dưỡng, hồi sức cho lính viễn chinh Pháp trong thời kì xâm lược Việt Nam."
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="102dp" />
+
+                <TextView
+                    android:id="@+id/txtnoidung4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:text="Vị trí địa lý"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="102dp" />
+
+                <TextView
+                    android:id="@+id/txtnoidung5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Đà Lạt là một thành phố có vị trí địa lý trắc địa nhất tại Việt Nam. Một thành phố toạc mình trên một mành đất cực kỳ lý tưởng. Thành Phố Đà Lạt ngàn hoa tọa mình trên cao nguyên Lâm Viên Đà Lạt. Vùng đất này có diện tích lên tới 400 km²."
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="102dp" />
+
+                <ImageView
+                    android:id="@+id/gioithieu2"
+                    android:layout_width="match_parent"
+                    android:layout_height="219dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:foregroundGravity="center_horizontal"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/quangtruong1"></ImageView>
+
+                <TextView
+                    android:id="@+id/txtnoidungdialy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Đà Lạt là một thành phố có vị trí địa lý trắc địa nhất tại Việt Nam. Một thành phố toạc mình trên một mành đất cực kỳ lý tưởng. Thành Phố Đà Lạt ngàn hoa tọa mình trên cao nguyên Lâm Viên Đà Lạt. Vùng đất này có diện tích lên tới 400 km²."
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="102dp" />
+
+                <TextView
+                    android:id="@+id/txtlichsu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:text="Lịch sử"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="102dp" />
+
+                <ImageView
+                    android:id="@+id/gioithieu4"
+                    android:layout_width="match_parent"
+                    android:layout_height="219dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:foregroundGravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dalat2"></ImageView>
+
+                <TextView
+                    android:id="@+id/txtnoidung6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Đà Lạt thành phố của muôn vàng loài hoa. Nằm trên vùng cao nguyên Lâm Viên hùng vĩ thơ mộng. Nơi đây có một kiểu khí hậu rất đặc trưng mà không một thành phố nào có được. Đà Lạt do một vị bác sĩ mang tên Alexandre Yersin tìm ra. Vào cuối thế kỉ 19 thì vị bác sĩ mang quốc tịch người pháp này. Được gia nhiệm vụ từ những nhà cầm quyền của nước Pháp. Đi tìm một vùng đất mới tốt lành. Thì lúc bấy giờ ông đã khám phá và tìm ra được thành phố Đà Lạt. Lúc đầu thì ông bỏ nhiều ngày dài khám phá khu vực Đông Nam Bộ ngày dài. Sau đó mới tìm ra được Đà Lạt"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="102dp" />
+
+                <TextView
+                    android:id="@+id/txtkhihau"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical"
+                    android:text="Khí hậu"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="102dp" />
+
+                <ImageView
+                    android:id="@+id/gioithieu3"
+                    android:layout_width="match_parent"
+                    android:layout_height="219dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:foregroundGravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dalat1"></ImageView>
+
+                <TextView
+                    android:id="@+id/txtnoidung7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Do địa hình được thiên nhiên ưa ái. Tọa lạc tại một độ cao vô cùng lý tưởng. Cho nên thành phố Đà Lạt được bao quanh bởi rừng thông xanh bát ngát. Quanh năm khí hậu ôn hòa mát mẻ. Đà Lạt là thành phố có khí hậu tuyệt với nhất nước Việt Nam ta. Khí hậu dịu mát quanh năm, nhiệt độ trung bình không quá 20 -21 độ C. Bao gồm cả những ngày nóng nhất. Nhưng một điều đặt biệt nữa là Đà Lạt cũng không lạnh quá. Trong những tháng mùa đông tại Đà Lạt nhiệt độ không dưới 10 độ C."
+                    tools:layout_editor_absoluteX="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    tools:layout_editor_absoluteY="102dp" />
+            </LinearLayout>
+
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

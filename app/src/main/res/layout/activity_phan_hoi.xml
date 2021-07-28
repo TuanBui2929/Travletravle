@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PhanHoiActivity" android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="393dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.328"
+        tools:layout_editor_absoluteX="2dp">
+
+        <RadioButton
+
+            android:id="@+id/rbntdukhach"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text=" Du khách" />
+
+        <RadioButton
+
+            android:id="@+id/rbntncc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Nhà cung cấp dịch vụ" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt1"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/radiogroup"
+        android:text="Địa chỉ email của bạn"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:hint="email"
+        android:layout_below="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt2"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/edt1"
+        android:text="Số điện thoại của bạn"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:hint="Số điện thoại"
+        android:layout_below="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt3"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/edt2"
+        android:text="Bạn thắc mắc về vấn đề nào?"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/edt3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:hint=""
+        android:layout_below="@+id/txt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt4"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/edt3"
+        android:text="Nội Dung Phản hồi"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/txt4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:gravity="top"
+        android:inputType="text|textMultiLine" />
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:id="@+id/addimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text"
+        android:src="@drawable/addimage_icon_foreground">
+
+    </ImageView>
+    <Button
+        android:textColor="@color/black"
+        android:text="Gửi"
+        android:backgroundTint="#FFDD00"
+        android:id="@+id/Bntgui"
+        android:layout_below="@+id/addimage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+
+
+
+</RelativeLayout>
+</ScrollView>

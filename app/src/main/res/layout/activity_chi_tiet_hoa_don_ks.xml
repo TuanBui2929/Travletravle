@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".chi_tiet_hoa_don_ks">
+    <TextView
+        android:id="@+id/ttnn"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="Thông tin người nhận"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/person"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ttnn"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/person_icon_foreground">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/sdt"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/person"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/phone_icon_foreground">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/email"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/sdt"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/email_icon_foreground">
+
+    </ImageView>
+
+
+    <ImageView
+        android:id="@+id/thanhtoan"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/payment_icon_foreground">
+
+    </ImageView>
+
+    <TextView
+        android:textColor="#FFC107"
+        android:id="@+id/txtperson"
+        android:textSize="20dp"
+        android:text="Bùi Danh Tuấn"
+        android:layout_below="@+id/ttnn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <TextView
+        android:textColor="#FFC107"
+        android:textSize="20dp"
+        android:text="0384898898"
+        android:layout_below="@+id/txtperson"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/txtphone"
+        android:layout_toRightOf="@+id/sdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:textColor="#FFC107"
+        android:id="@+id/txtemailhoadon"
+        android:textSize="20dp"
+        android:text="buidanhtuan2929@gmail.com"
+        android:layout_below="@+id/txtphone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:textColor="#FFC107"
+        android:id="@+id/txtthanhtoan"
+        android:textSize="20dp"
+        android:text="Thanh toán trực tiếp"
+        android:layout_below="@+id/txtemailhoadon"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/thanhtoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imagecthoadon"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/payment"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/txtthanhtoan"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/chitiet"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:text="Chi tiêt"
+        android:textSize="20dp"
+        android:layout_below="@+id/imagecthoadon"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/tenks"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="Khu Du Lich Sinh Thai"
+        android:textSize="20dp"
+        android:layout_below="@+id/chitiet"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:id="@+id/giakhachsan"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="200.000 VND"
+        android:textSize="15dp"
+        android:layout_below="@+id/tenks"
+        android:textColor="#ff00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/ngay"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:text="Ngày mua:"
+        android:textSize="15dp"
+        android:layout_below="@+id/giakhachsan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:id="@+id/txtngaymua"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="28/5/2021"
+        android:textSize="15dp"
+        android:layout_toRightOf="@id/ngay"
+        android:layout_below="@+id/giakhachsan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:id="@+id/mahoadon"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="Số hóa đơn:"
+        android:textSize="15dp"
+        android:layout_below="@+id/ngay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtctsohoadon"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:textSize="15dp"
+        android:layout_toRightOf="@id/mahoadon"
+        android:layout_below="@+id/txtngaymua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:id="@+id/xxxx"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="Tổng tiền thanh toán"
+        android:textSize="15dp"
+        android:layout_below="@+id/mahoadon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:id="@+id/tongtienthanhtoan"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="200.000 VND"
+        android:textSize="15dp"
+        android:textColor="#ff00"
+        android:layout_toRightOf="@id/xxxx"
+        android:layout_below="@+id/txtctsohoadon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <Button
+        android:id="@+id/bntxacnhandonhang"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tongtienthanhtoan"
+        android:text="Quay lại màn hình chính"
+        android:backgroundTint="@color/purple_200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+
+
+
+
+
+
+
+</RelativeLayout>

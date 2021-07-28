@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/xxxxxxxxxxxxa"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imagechudetour"
+        android:layout_width="209dp"
+        android:layout_height="139dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/txttieudetour"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@+id/imagechudetour"
+        android:layout_marginTop="2dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/txtnoidung"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txttieudetour"
+        android:layout_marginTop="6dp"
+        android:text="Giá Bán">
+
+    </TextView>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:textColor="#FFC107"
+        android:id="@+id/txtgiaban"
+        android:layout_width="119dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/txtnoidung"
+        android:layout_marginTop="5dp"
+
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+</RelativeLayout>

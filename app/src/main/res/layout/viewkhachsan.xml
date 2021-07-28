@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rekhachsan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:background="#E9FFD0"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/imagekhachsan"
+            android:layout_width="209dp"
+            android:layout_height="139dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/txttieudekhachsan"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@+id/imagekhachsan"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtdiachi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txttieudekhachsan"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:text="Địa chỉ: "
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtsodienthoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtnoidungdiachi"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:text="Hotline: "
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtnoidungdiachi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtdiachi"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="-19dp"
+            android:layout_toRightOf="@id/txtdiachi"
+            android:gravity="center"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="114dp" />
+
+        <TextView
+            android:id="@+id/txtnoidunghotline1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtnoidungdiachi"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/txtsodienthoai"
+            android:gravity="center"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="114dp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

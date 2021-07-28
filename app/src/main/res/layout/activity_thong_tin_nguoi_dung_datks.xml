@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#673AB7"
+    tools:context=".ThongTinNguoiDungDatKSActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/boderkhachhang"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:text="Thông Tin Khách Hàng"
+            android:textColor="#0a0a0a"
+            android:textSize="30sp"
+            android:textStyle="bold">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp">
+            <EditText
+                android:layout_margin="5dp"
+                android:id="@+id/edtnhaptenkhachhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập Tên Khách Hàng"
+                android:inputType="text">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_margin="5dp"
+                android:id="@+id/edtnhapsodienthoaikhachhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập Số Điện Thoại"
+                android:inputType="phone">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_margin="5dp"
+                android:id="@+id/edtnhapemailkhachhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập Email"
+                android:inputType="textEmailAddress">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <Button
+                android:layout_marginRight="20dp"
+                android:id="@+id/bntxacnhan"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="#00BCD4"
+                android:padding="10dp"
+                android:textColor="#ff0"
+                android:text="Xác Nhận"
+                android:textSize="15dp"
+                >
+            </Button>
+
+
+            <Button
+                android:layout_marginLeft="20dp"
+                android:id="@+id/bnthuy"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="#00BCD4"
+                android:padding="10dp"
+                android:textColor="#ff0"
+                android:text="Hủy"
+                android:textSize="15dp"
+                >
+
+            </Button>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

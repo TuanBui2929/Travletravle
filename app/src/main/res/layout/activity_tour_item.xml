@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TourItemActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/imageitemtour"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/b"
+        />
+
+    <TextView
+
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:id="@+id/txttieudeitemtourrr"
+        android:layout_below="@id/imageitemtour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginLeft="10dp"
+        android:foregroundGravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/bntitemdattour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txttieudeitemtourrr"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Đặt Ngay"
+        android:textSize="20dp"
+        android:background="#FFEB3B"
+        app:backgroundTint="@android:color/holo_green_light" />
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/khoihanh"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/bntitemdattour"
+        android:text="Khởi Hành: "
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:textColor="#FFC107"
+        android:textStyle="normal"
+        android:id="@+id/valuekhoihanh"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/bntitemdattour"
+        android:layout_toRightOf="@id/khoihanh"
+        android:text="DAILY"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/thoigian"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/khoihanh"
+        android:text="Thời Gian: "
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:textColor="#FFC107"
+        android:textStyle="normal"
+        android:id="@+id/valuethoigian"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/khoihanh"
+        android:layout_toRightOf="@id/thoigian"
+        android:text="Thời Gian"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/giatour"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/thoigian"
+        android:text="Giá Tour: "
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/valuegiatour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thoigian"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/giatour"
+        android:text="Giá Tour "
+        android:textColor="#FFC107"
+        android:textSize="15dp"
+        android:textStyle="normal">
+
+    </TextView>
+
+    <TextView
+        android:textStyle="italic"
+
+        android:id="@+id/itemgioithieutour"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/giatour"
+        android:text="Giới Thiệu"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/listviewlichtrinhtour"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/itemgioithieutour"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"></ListView>
+
+
+</RelativeLayout>

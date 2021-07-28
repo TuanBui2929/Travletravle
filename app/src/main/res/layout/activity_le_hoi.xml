@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/sliderlehoi"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="3"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorEnabled="true"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="2"
+        app:sliderStartAutoCycle="true">
+    </com.smarteist.autoimageslider.SliderView>
+
+    <TextView
+        android:id="@+id/lehoitieude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/sliderlehoi"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textStyle="bold">
+
+    </TextView>
+    <TextView
+        android:id="@+id/thoigian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thời gian:"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/lehoitieude">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/ngaylehoi3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/thoigian"
+        android:text="TextView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555">
+
+    </TextView>
+    <TextView
+        android:id="@+id/diadiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Địa điểm:"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/lehoitieude">
+    </TextView>
+    <TextView
+        android:id="@+id/diachilehoi3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/diadiem"
+        android:text="TextView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555">
+    </TextView>
+
+    <TextView
+        android:id="@+id/thongtinlehoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diachilehoi3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:text="Thông tin lễ hội"
+        android:textColor="#000000"
+        android:textStyle="bold">
+    </TextView>
+    <TextView
+        android:id="@+id/noidung1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thongtinlehoi"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp">
+    </TextView>
+    <ImageView
+        android:id="@+id/ig1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/noidung1"
+        android:scaleType="centerCrop">
+    </ImageView>
+    <TextView
+        android:id="@+id/noidung2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ig1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp">
+    </TextView>
+    <ImageView
+        android:id="@+id/ig2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/noidung2"
+        android:scaleType="centerCrop">
+    </ImageView>
+    <TextView
+        android:id="@+id/noidung3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ig2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp">
+    </TextView>
+    <ImageView
+        android:id="@+id/ig3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/noidung3"
+        android:scaleType="centerCrop">
+    </ImageView>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
+
