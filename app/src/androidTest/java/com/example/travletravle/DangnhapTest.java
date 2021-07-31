@@ -63,7 +63,8 @@ public class DangnhapTest {
         solo.clickOnView(solo.getView(R.id.edtemaildangnhap));
         solo.clickOnView(solo.getView(R.id.edtpassworddangnhap));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity", MainActivity.class);
+        assertTrue(solo.waitForText("NHap day du thong tin"));
+    //    solo.assertCurrentActivity("Current activity should be LoginActivity", MainActivity.class);
 
     }
     @Test
@@ -76,7 +77,8 @@ public class DangnhapTest {
         solo.clickOnView(solo.getView(R.id.edtemaildangnhap));
         solo.clickOnView(solo.getView(R.id.edtpassworddangnhap));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity", MainActivity.class);
+        assertTrue(solo.waitForText("Vui Lòng Nhập Mật Khẩu"));
+   //     solo.assertCurrentActivity("Current activity should be LoginActivity", MainActivity.class);
 
     }
     @Test
@@ -89,7 +91,8 @@ public class DangnhapTest {
         solo.clickOnView(solo.getView(R.id.edtemaildangnhap));
         solo.clickOnView(solo.getView(R.id.edtpassworddangnhap));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity", MainActivity.class);
+        assertTrue(solo.waitForText("Vui Lòng Nhập Email"));
+       // solo.assertCurrentActivity("Current activity should be LoginActivity", MainActivity.class);
 
     }
     @Test
@@ -102,7 +105,8 @@ public class DangnhapTest {
         solo.clickOnView(solo.getView(R.id.edtemaildangnhap));
         solo.clickOnView(solo.getView(R.id.edtpassworddangnhap));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity", MainActivity.class);
+        assertTrue(solo.waitForText("Đăng Nhâp Thất Bại"));
+     //   solo.assertCurrentActivity("Current activity should be LoginActivity", MainActivity.class);
 
     }
 

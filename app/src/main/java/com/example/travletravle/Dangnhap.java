@@ -1,8 +1,10 @@
 package com.example.travletravle;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -55,14 +57,44 @@ public class Dangnhap extends AppCompatActivity {
             public void onClick(View v) {
                 if(email.getText().toString().equals("")||matkhau.getText().toString().equals("")){
                     if(email.getText().toString().equals("")&&matkhau.getText().toString().equals("")){
-                        Toast.makeText(Dangnhap.this, "abc", Toast.LENGTH_LONG).show();
+                      //  Toast.makeText(Dangnhap.this, "abc", Toast.LENGTH_LONG).show();
+                        AlertDialog.Builder alert = new AlertDialog.Builder(Dangnhap.this);
+                        alert.setTitle("Thong bao");
+                        alert.setMessage("NHap day du thong tin");
+                        alert.setPositiveButton("Thoat", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                            }
+                        });
+                        alert.show();
                     }
                     else {
                         if(email.getText().toString().equals("")){
-                            Toast.makeText(Dangnhap.this, "Vui Lòng Nhập Email", Toast.LENGTH_LONG).show();
+                          //  Toast.makeText(Dangnhap.this, "Vui Lòng Nhập Email", Toast.LENGTH_LONG).show();
+                            AlertDialog.Builder alert = new AlertDialog.Builder(Dangnhap.this);
+                            alert.setTitle("Thong bao");
+                            alert.setMessage("Vui Lòng Nhập Email");
+                            alert.setPositiveButton("Thoat", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+
+                                }
+                            });
+                            alert.show();
                         }
                         else{
-                            Toast.makeText(Dangnhap.this, "Vui Lòng Nhập Mật Khẩu", Toast.LENGTH_LONG).show();
+                         //   Toast.makeText(Dangnhap.this, "Vui Lòng Nhập Mật Khẩu", Toast.LENGTH_LONG).show();
+                            AlertDialog.Builder alert = new AlertDialog.Builder(Dangnhap.this);
+                            alert.setTitle("Thong bao");
+                            alert.setMessage("Vui Lòng Nhập Mật Khẩu");
+                            alert.setPositiveButton("Thoat", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+
+                                }
+                            });
+                            alert.show();
                         }
 
                     }
@@ -79,10 +111,21 @@ public class Dangnhap extends AppCompatActivity {
                                 bundle.putString("matkhau",matkhau.getText().toString());
                                 Intent intent = new Intent(Dangnhap.this,MainActivity.class);
                                 intent.putExtras(bundle);
+
                                 startActivity(intent);
                             }
                             else {
-                                Toast.makeText(Dangnhap.this, "Đăng Nhâp Thất Bại", Toast.LENGTH_LONG).show();
+                                //Toast.makeText(Dangnhap.this, "Đăng Nhâp Thất Bại", Toast.LENGTH_LONG).show();
+                                AlertDialog.Builder alert = new AlertDialog.Builder(Dangnhap.this);
+                                alert.setTitle("Thong bao");
+                                alert.setMessage("Đăng Nhâp Thất Bại");
+                                alert.setPositiveButton("Thoat", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+
+                                    }
+                                });
+                                alert.show();
                             }
 
                         }

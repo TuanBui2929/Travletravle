@@ -1,7 +1,9 @@
 package com.example.travletravle;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -98,8 +100,16 @@ public class ThongTinNguoiDungDatKSActivity extends AppCompatActivity {
 
                 } else {
 
-                    Toast.makeText(ThongTinNguoiDungDatKSActivity.this, "Nhập Đầy đủ thông tin",
-                            Toast.LENGTH_LONG).show();
+                    AlertDialog.Builder alert = new AlertDialog.Builder(ThongTinNguoiDungDatKSActivity.this);
+                    alert.setTitle("Thong bao");
+                    alert.setMessage("Nhập Đầy đủ thông tin");
+                    alert.setPositiveButton("Thoat", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+
+                        }
+                    });
+                    alert.show();
                 }
 
             }

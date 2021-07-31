@@ -1,7 +1,9 @@
 package com.example.travletravle;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -21,7 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import static android.text.SpannableString.valueOf;
 public class Dangki extends AppCompatActivity {
-    FirebaseDatabase firebaseDatabase;
+
     DatabaseReference reference;
     Button dangki;
     EditText edtemail,sdt;
@@ -37,11 +39,22 @@ public class Dangki extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     User user = new User(edtemail.getText().toString(), sdt.getText().toString(),
                     hovaten.getText().toString(), matkhau.getText().toString());
-                    reference.child(sdt.getText().toString()).setValue(user);
+                   reference.child(sdt.getText().toString()).setValue(user);
+
                     Intent intent = new Intent(Dangki.this, Dangnhap.class);
                     startActivity(intent);
                 } else {
-                    Toast.makeText(Dangki.this, "Dang ki that bai", Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(Dangki.this, "Dang ki that bai", Toast.LENGTH_SHORT).show();
+                    AlertDialog.Builder alert = new AlertDialog.Builder(Dangki.this);
+                    alert.setTitle("Thong bao");
+                    alert.setMessage("Dang ki that bai");
+                    alert.setPositiveButton("Thoat", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+
+                        }
+                    });
+                    alert.show();
                 }
             }
         });
@@ -57,17 +70,27 @@ public class Dangki extends AppCompatActivity {
         hovaten= findViewById(R.id.hovatendangki);
         matkhau= findViewById(R.id.passwordangki);
         auth =FirebaseAuth.getInstance();
-        firebaseDatabase = FirebaseDatabase.getInstance();
-        reference=firebaseDatabase.getReference("User");
+
+        reference=FirebaseDatabase.getInstance().getReference("test");
           dangki.setOnClickListener(new View.OnClickListener() {
               @Override
               public void onClick(View v) {
                 if(edtemail.getText().length()>0&&sdt.getText().length()>0&&
-                        hovaten.getText().length()>0&&matkhau.getText().length()>0) {
+                        hovaten.getText().length()>0&&matkhau.getText().length()>=6) {
                         dangki();
                 }
                 else{
-                    Toast.makeText(Dangki.this, "Vui Lòng Nhập Đầy Đủ Thông Tin", Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(Dangki.this, "Vui Lòng Nhập Đầy Đủ Thông Tin", Toast.LENGTH_SHORT).show();
+                    AlertDialog.Builder alert = new AlertDialog.Builder(Dangki.this);
+                    alert.setTitle("Thong bao");
+                    alert.setMessage("Vui Lòng Nhập Đầy Đủ Thông Tin");
+                    alert.setPositiveButton("Thoat", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+
+                        }
+                    });
+                    alert.show();
                 }
 
               }

@@ -13,6 +13,8 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 
+import static org.junit.Assert.assertTrue;
+
 public class DangkiTest {
     @Rule
     public ActivityTestRule<Dangki> activityTestRule = new ActivityTestRule<>(Dangki.class);
@@ -48,7 +50,8 @@ public class DangkiTest {
         solo.clickOnView(solo.getView(R.id.hovatendangki));
         solo.clickOnView(solo.getView(R.id.passwordangki));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity", Dangnhap.class);
+        assertTrue(solo.waitForText("Vui Lòng Nhập Đầy Đủ Thông Tin"));
+ //       solo.assertCurrentActivity("Current activity should be LoginActivity", Dangnhap.class);
     }
 // testcase dang ki thanh cong
     @Test
@@ -58,7 +61,7 @@ public class DangkiTest {
         solo.clearEditText(2);
         solo.clearEditText(1);
         solo.clearEditText(0);
-        solo.enterText(3,"Nguyenadmin@gmail.com");
+        solo.enterText(3,"Buiadmin@gmail.com");
         solo.enterText(2, "0923323434");
         solo.enterText(1,"Nguyen Van Admin");
         solo.enterText(0, "123456");
@@ -85,7 +88,7 @@ public class DangkiTest {
         solo.clickOnView(solo.getView(R.id.hovatendangki));
         solo.clickOnView(solo.getView(R.id.passwordangki));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity", Dangnhap.class);
+        assertTrue(solo.waitForText("Vui Lòng Nhập Đầy Đủ Thông Tin"));
     }
     @Test
     public void testregistermailwrong() throws Exception {
@@ -103,7 +106,7 @@ public class DangkiTest {
         solo.clickOnView(solo.getView(R.id.hovatendangki));
         solo.clickOnView(solo.getView(R.id.passwordangki));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity", Dangnhap.class);
+        assertTrue(solo.waitForText("Dang ki that bai"));
     }
     @Test
     public void testregisternumbernull() throws Exception {
@@ -121,7 +124,7 @@ public class DangkiTest {
         solo.clickOnView(solo.getView(R.id.hovatendangki));
         solo.clickOnView(solo.getView(R.id.passwordangki));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity", Dangnhap.class);
+        assertTrue(solo.waitForText("Vui Lòng Nhập Đầy Đủ Thông Tin"));
     }
     @Test
     public void testregisternamenull() throws Exception {
@@ -139,7 +142,7 @@ public class DangkiTest {
         solo.clickOnView(solo.getView(R.id.hovatendangki));
         solo.clickOnView(solo.getView(R.id.passwordangki));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity", Dangnhap.class);
+        assertTrue(solo.waitForText("Vui Lòng Nhập Đầy Đủ Thông Tin"));
     }
     @Test
     public void testregisterpasswordnull() throws Exception {
@@ -157,7 +160,7 @@ public class DangkiTest {
         solo.clickOnView(solo.getView(R.id.hovatendangki));
         solo.clickOnView(solo.getView(R.id.passwordangki));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity", Dangnhap.class);
+        assertTrue(solo.waitForText("Vui Lòng Nhập Đầy Đủ Thông Tin"));
     }
     @Test
     public void testregisterpasswordnotinvalid() throws Exception {
@@ -166,7 +169,7 @@ public class DangkiTest {
         solo.clearEditText(2);
         solo.clearEditText(1);
         solo.clearEditText(0);
-        solo.enterText(3,"user@gmail.com");
+        solo.enterText(3,"userfsdfsdfsdf@gmail.com");
         solo.enterText(2, "02309243234");
         solo.enterText(1,"Tran Van A");
         solo.enterText(0, "123");
@@ -175,7 +178,7 @@ public class DangkiTest {
         solo.clickOnView(solo.getView(R.id.hovatendangki));
         solo.clickOnView(solo.getView(R.id.passwordangki));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity", Dangnhap.class);
+        assertTrue(solo.waitForText("Vui Lòng Nhập Đầy Đủ Thông Tin"));
     }
 
 

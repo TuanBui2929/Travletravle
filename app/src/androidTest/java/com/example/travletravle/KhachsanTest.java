@@ -8,6 +8,8 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 
+import static org.junit.Assert.assertTrue;
+
 public class KhachsanTest {
     @Rule
     public ActivityTestRule<KhachsanActivity> activityTestRule = new ActivityTestRule<>(KhachsanActivity.class);
@@ -47,7 +49,7 @@ public class KhachsanTest {
     @Test
     public void testtourfail() throws Exception {
 
-        solo.clickInList(2);
+        solo.clickInList(1);
         solo.clickOnButton(0);
         solo.clearEditText(0);
         solo.clearEditText(1);
@@ -59,7 +61,7 @@ public class KhachsanTest {
         solo.clickOnView(solo.getView(R.id.edtnhapsodienthoaikhachhang));
         solo.clickOnView(solo.getView(R.id.edtnhapemailkhachhang));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity",chi_tiet_hoa_don_ks.class);
+        assertTrue(solo.waitForText("Nhập Đầy đủ thông tin"));
 
     }
     @Test
@@ -77,13 +79,13 @@ public class KhachsanTest {
         solo.clickOnView(solo.getView(R.id.edtnhapsodienthoaikhachhang));
         solo.clickOnView(solo.getView(R.id.edtnhapemailkhachhang));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity",chi_tiet_hoa_don_ks.class);
+        assertTrue(solo.waitForText("Nhập Đầy đủ thông tin"));
 
     }
     @Test
     public void testtourtenandphonenull() throws Exception {
 
-        solo.clickInList(2);
+        solo.clickInList(3);
         solo.clickOnButton(0);
         solo.clearEditText(0);
         solo.clearEditText(1);
@@ -95,13 +97,13 @@ public class KhachsanTest {
         solo.clickOnView(solo.getView(R.id.edtnhapsodienthoaikhachhang));
         solo.clickOnView(solo.getView(R.id.edtnhapemailkhachhang));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity",chi_tiet_hoa_don_ks.class);
+        assertTrue(solo.waitForText("Nhập Đầy đủ thông tin"));
 
     }
     @Test
     public void testtourtenandmailnull() throws Exception {
 
-        solo.clickInList(2);
+        solo.clickInList(4);
         solo.clickOnButton(0);
         solo.clearEditText(0);
         solo.clearEditText(1);
@@ -113,13 +115,13 @@ public class KhachsanTest {
         solo.clickOnView(solo.getView(R.id.edtnhapsodienthoaikhachhang));
         solo.clickOnView(solo.getView(R.id.edtnhapemailkhachhang));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity",chi_tiet_hoa_don_ks.class);
+        assertTrue(solo.waitForText("Nhập Đầy đủ thông tin"));
 
     }
     @Test
     public void testtourphoneandmailnull() throws Exception {
 
-        solo.clickInList(2);
+        solo.clickInList(0);
         solo.clickOnButton(0);
         solo.clearEditText(0);
         solo.clearEditText(1);
@@ -131,12 +133,12 @@ public class KhachsanTest {
         solo.clickOnView(solo.getView(R.id.edtnhapsodienthoaikhachhang));
         solo.clickOnView(solo.getView(R.id.edtnhapemailkhachhang));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity",chi_tiet_hoa_don_ks.class);
+        assertTrue(solo.waitForText("Nhập Đầy đủ thông tin"));
 
     }
     @Test
     public void testtourmailnull() throws Exception {
-        solo.clickInList(2);
+        solo.clickInList(3);
         solo.clickOnButton(0);
         solo.clearEditText(0);
         solo.clearEditText(1);
@@ -148,6 +150,6 @@ public class KhachsanTest {
         solo.clickOnView(solo.getView(R.id.edtnhapsodienthoaikhachhang));
         solo.clickOnView(solo.getView(R.id.edtnhapemailkhachhang));
         this.solo.clickOnButton(0);
-        solo.assertCurrentActivity("Current activity should be LoginActivity",chi_tiet_hoa_don_ks.class);
+        assertTrue(solo.waitForText("Nhập Đầy đủ thông tin"));
     }
 }
