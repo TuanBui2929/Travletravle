@@ -108,7 +108,7 @@ public class TourTest {
     @Test
     public void testtourtenandmailnull() throws Exception {
 
-        solo.clickInList(5);
+        solo.clickInList(3);
         solo.clickOnButton(0);
         solo.clearEditText(0);
         solo.clearEditText(1);

@@ -162,7 +162,7 @@ public class DangkiTest {
         this.solo.clickOnButton(0);
         assertTrue(solo.waitForText("Vui Lòng Nhập Đầy Đủ Thông Tin"));
     }
-    @Test
+
     public void testregisterpasswordnotinvalid() throws Exception {
 
         solo.clearEditText(3);
